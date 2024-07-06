@@ -101,6 +101,7 @@ a!localVariables(
 )
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #2 Create a Connected System  (VU Local API)
 
 Base URL: https://<Environment URL>/suite/webapi/vu-generate-excel
@@ -167,10 +168,10 @@ a!localVariables(
 #5 Create a generic Expression Rule(VU_generateExportToExcelDocumentLink) for generating the Web API url with the JSON payload data
 
 Rule Inputs:
-1. label - Text
-2. jsonData - Text
-3. showWhen - Boolean
-4. openLinkIn - Text
+1. label (Text)
+2. jsonData (Text)
+3. showWhen (Boolean)
+4. openLinkIn (Text)
 
 Code:
 a!safeLink(
