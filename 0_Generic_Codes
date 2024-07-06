@@ -53,3 +53,27 @@ index(
   "value",
   null
 )
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3 Check whether is Appian Document ID exists:
+
+Rule Inputs:
+1. documentId (Number (Integer))
+
+Code:
+and(
+  a!isNotNullOrEmpty(ri!documentId),
+  find(
+    "Document",
+    extract(
+      getcontentobjectdetailsbyid(id: ri!documentId),
+      "Type:",
+      "]"
+    )
+  ) > 0
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
