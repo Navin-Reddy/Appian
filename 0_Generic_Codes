@@ -1,11 +1,55 @@
 #1 Check Is Null Or Empty
 
 Rule Inputs:
-value - Any type
+1. value (Any Type)
 
 Code:
 or(
   a!isNullOrEmpty(ri!value),
   trim(ri!value) = "",
   length(ri!value) = 0
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#2 Sort the given array based on Data Type
+
+Rule Inputs:
+1. array (Any Type)
+2. dataType (Text)
+3. isDesc (Boolean)
+
+
+Code:
+index(
+  index(
+    todatasubset(
+      arrayToPage: a!forEach(
+        ri!array,
+        {
+          value: if(
+            ri!dataType = "Integer",
+            tointeger(fv!item),
+            if(
+              ri!dataType = "Decimal",
+              todecimal(fv!item),
+              tostring(fv!item)
+            )
+          )
+        }
+      ),
+      pagingConfiguration: a!pagingInfo(
+        1,
+        - 1,
+        a!sortInfo(
+          field: "value",
+          ascending: ri!isDesc <> true
+        )
+      )
+    ),
+    "data",
+    null
+  ),
+  "value",
+  null
 )
