@@ -1,0 +1,23 @@
+Code:
+a!localVariables(
+  local!array: { 0, 1 },
+  local!n: 10,
+  a!buttonWidget(
+    label: "Click",
+    saveInto: a!forEach(
+      enumerate(local!n - 2),
+      a!save(
+        local!array,
+        append(
+          local!array,
+          sum(
+            tointeger(
+              index(reverse(local!array), 1, null),
+              index(reverse(local!array), 2, null)
+            )
+          )
+        )
+      )
+    )
+  )
+)
