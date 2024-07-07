@@ -37,8 +37,7 @@ a!localVariables(
     round(
       (
         power(local!phi, fv!item) - power(local!psi, fv!item)
-      ) / sqrt(5),
-      0
+      ) / sqrt(5)
     )
   )
 )
