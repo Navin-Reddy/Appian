@@ -1,3 +1,5 @@
+#1 Iterative Approach with Button Save:
+
 Code:
 a!localVariables(
   local!array: { 0, 1 },
@@ -18,6 +20,25 @@ a!localVariables(
           )
         )
       )
+    )
+  )
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#2 Using Binet's Formula:
+
+a!localVariables(
+  local!n: 10,
+  local!phi: (1 + sqrt(5)) / 2,
+  local!psi: (1 - sqrt(5)) / 2,
+  a!forEach(
+    enumerate(local!n),
+    round(
+      (
+        power(local!phi, fv!item) - power(local!psi, fv!item)
+      ) / sqrt(5),
+      0
     )
   )
 )
