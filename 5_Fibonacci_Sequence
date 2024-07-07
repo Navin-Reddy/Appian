@@ -14,8 +14,8 @@ a!localVariables(
           local!array,
           sum(
             tointeger(
-              index(reverse(local!array), 1, null),
-              index(reverse(local!array), 2, null)
+              index(local!array, length(local!array), null),
+              index(local!array, length(local!array) - 1, null)
             )
           )
         )
