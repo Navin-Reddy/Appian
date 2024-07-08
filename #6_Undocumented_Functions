@@ -13,3 +13,33 @@ a!richTextDisplayField(
     link: 'type!{http://www.appian.com/ae/types/2009}CopyToClipboardLink'(textToCopy: ri!textToCopy)
   )
 )
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#2 Try Function:
+
+The try() function can allow you to get some error handling within Appian, although it will not work to catch all error types.
+
+Code:
+try(concat(), fn!lastError().details)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3 Eval Function:
+
+Converts the text to SAIL code, then evaluates the code, similar to eval() in JavaScript.
+
+Code:
+eval("len(""Navin"")")
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#4 Enum Function
+
+The enum() is similar to enumerate().
+
+Code:
+enum(9)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
