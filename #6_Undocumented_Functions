@@ -1,0 +1,15 @@
+#1 Copy the test to Clipboard:
+
+Object Name: VU_copyToClipboard
+
+Rule Inputs:
+1. textToCopy (Text)
+
+Code: 
+a!richTextDisplayField(
+  labelPosition: "COLLAPSED",
+  value: a!richTextItem(
+    text: "Click here to copy",
+    link: 'type!{http://www.appian.com/ae/types/2009}CopyToClipboardLink'(textToCopy: ri!textToCopy)
+  )
+)
