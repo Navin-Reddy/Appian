@@ -70,8 +70,6 @@ Object Name: VU_convertBase64ToDocument
 Configurations:
 Method: POST
 Usage: Modifies data
-(Modifying Data: Integrations that create Appian documents can only be used in a saveInto parameter, a Web API, or the Call Integration smart service in the process modeler.
-This protects against duplicate document creation.)
 
 Rule Inputs:
 1. ppId (Number (Integer))
@@ -81,11 +79,7 @@ Rule Inputs:
 
 Convert base64 values to Appian documents: True
 Response Body Location:
-Name: concat(
-  a!defaultValue(ri!docName, concat("Document_", ri!ppId)),
-  ".",
-  ri!docExt
-)
+Name: concat(a!defaultValue(ri!docName, concat("Document_", ri!ppId)), ".", ri!docExt)
 Save Documents In: ri!folder
 
 Code Explanation:
