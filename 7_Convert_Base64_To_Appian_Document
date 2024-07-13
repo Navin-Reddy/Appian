@@ -136,8 +136,8 @@ Inputs
 Outputs
 | Expression                                                           | Operation                          | Variable |
 |----------------------------------------------------------------------|------------------------------------|----------|
-| AC!Error is stored as                                                |                                    | Error    |
-| index( index(ac!Result, "body", null), "base64", null ) is stored as |                                    | newDocId |
+| AC!Error                                                             | is stored as                       | Error    |
+| index( index(ac!Result, "body", null), "base64", null )              | is stored as                       | newDocId |
 
 Node 4: End Node
 Node Type: End Node
