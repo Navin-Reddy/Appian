@@ -146,4 +146,9 @@ Node Type: End Node
 
 The process model can be configured as needed, and the output, `newDocId`, can be retrieved from the process.
 
+Overcoming Integration Request Size Limit:
+To overcome the 5MB limit in Integration requests, the process ID is used to fetch Base64 data from the Process using Query Process Analytics or the getexternalpvsactivity plugin function.
+
+Usage Consideration:
+The maximum document size limit is 75MB.
 
