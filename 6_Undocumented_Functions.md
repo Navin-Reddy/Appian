@@ -1,4 +1,4 @@
-# Appian Functions and Examples
+# Undocumented Functions and Examples
 
 ## #1 Copy the test to Clipboard:
 
