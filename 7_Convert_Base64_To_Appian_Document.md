@@ -4,17 +4,16 @@
 
 ```
 Process ──► Integration Call ──► Web API ──► Integration Object ──► Process
-    |              |                  |                       |                    |
-    | (Passed Base64 String,       |   (Returns the          |                    |
-    | Folder, Document Name        |   Base64 String)        |                    |
-    | as Input)                    |                         |                    |
+    |              |                  |                         |                    |
+    | (Passed Process ID,             |   (Returns the          |                    |
+    | Folder, Document Name           |   Base64 String)        |                    |
+    | as Input)                       |                         |                    |
     |              |                  |                         |                    |
     └──────────────┼──────────────────┼─────────────────────────┼────────────────────┘
                    |                  |                         |
                    └──────────────────┼─────────────────────────┘
                                       |
-                                (Calls the API,
-                                 Passes the Base64)
+                          (Calls the API, Passes the Base64)
 ```
 
 ### Description:
