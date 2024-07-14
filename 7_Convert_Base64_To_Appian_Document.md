@@ -1,4 +1,4 @@
-# Usecase: Convert Base64 String to Appian Document
+# Convert Base64 String to Appian Document
 
 ## Visual Flow:
 
