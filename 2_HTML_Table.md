@@ -1,4 +1,7 @@
-Rule Inputs:
+
+## Common Expression Rule Code for HTML Table Construction
+
+### Rule Inputs:
 1. columnHeaders (List of Text String)
 2. column1 (List of Text String)
 3. column2 (List of Text String)
@@ -14,7 +17,8 @@ Rule Inputs:
 13. baseBkroundHex (Text)
 14. stripedBkroundHex (Text)
 
-Code: 
+### Code:
+```apex 
 if(
   a!isNullOrEmpty(ri!columnHeaders),
   "",
@@ -123,3 +127,4 @@ if(
     )
   )
 )
+```
