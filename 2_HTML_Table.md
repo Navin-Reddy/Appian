@@ -1,5 +1,5 @@
 
-## Common Expression Rule Code for HTML Table Construction
+# HTML Table Construction
 
 ### Rule Inputs:
 1. columnHeaders (List of Text String)
