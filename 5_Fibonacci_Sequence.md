@@ -1,6 +1,7 @@
 ### Iterative Approach with Button Save:
 
-```a!localVariables(
+```apex
+a!localVariables(
   local!array: { 0, 1 },
   local!n: 10,
   a!buttonWidget(
@@ -21,7 +22,8 @@
       )
     )
   )
-)```
+)
+```
 
 #### Explanation:
 
@@ -37,7 +39,8 @@
 
 ### Using Binet's Formula:
 
-```a!localVariables(
+```apex
+a!localVariables(
   local!n: 10,
   local!phi: (1 + sqrt(5)) / 2,
   local!psi: (1 - sqrt(5)) / 2,
@@ -49,7 +52,8 @@
       ) / sqrt(5)
     )
   )
-)```
+)
+```
 
 #### Explanation:
 
@@ -71,26 +75,30 @@
 1. list (List of Number (Integer))
 2. result (List of Number (Integer))
 
-```a!if(
-  a!count(ri!list) < 2,
+```apex
+if(
+  count(ri!list) < 2,
   { 0, 1 },
-  a!append(
+  append(
     ri!list,
-    a!sum(
+    sum(
       {
-        index(ri!list, a!length(ri!list), null),
-        index(ri!list, a!length(ri!list) - 1, null)
+        index(ri!list, length(ri!list), null),
+        index(ri!list, length(ri!list) - 1, null)
       }
     )
   )
-)```
+)
+```
 
 ### VU_fibbonacciSequence
 
-```a!reduce(
+```apex
+reduce(
   rule!VU_appendAndReturnListForFibbo(list: _, result: _),
   {},
   a!enumerate(10)
-)```
+)
+```
 
 ---
