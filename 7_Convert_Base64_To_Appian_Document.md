@@ -28,13 +28,6 @@ Process ───►  Integration Call ───► Web API ───►  Integr
   
 - **Process:** Concludes the flow after processing the Base64 string into an Appian Document.
 
-### Explanation:
-
-- This diagram provides a step-by-step visual representation of the process flow for converting a Base64 string into an Appian Document.
-- Each component is clearly labeled with directional arrows indicating the flow of data and actions.
-- The format is designed to be clear and concise, suitable for displaying in Markdown on GitHub for easy understanding of the process flow.
-
-
 ---
 
 ## Steps:
