@@ -22,7 +22,7 @@ Process ───►  Integration Call ───► Web API ───►  Integr
   
 - **Integration Call:** Executes an integration call to initiate the Web API.
   
-- **Web API:** Retrieves the Base64 string from an external source.
+- **Web API:** Retrieves the Base64 string from process instance.
   
 - **Integration Object:** Converts the retrieved Base64 string into an Appian Document.
   
