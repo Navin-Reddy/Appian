@@ -3,24 +3,38 @@
 ## Visual Flow:
 
 ```
-Process
-    |
-    | (Passed Base64 String, Folder, Document Name as Input)
-    v
-Integration Call
-    |
-    | (Calls the API, Passes the Base64)
-    v
-Web API
-    | 
-    | (Returns the Base64 String)
-    v
-Integration Object
-    |
-    | (Converts Base64 to Appian Document)
-    v
-Process
+Process ──► Integration Call ──► Web API ──► Integration Object ──► Process
+    |              |                  |                       |                    |
+    | (Passed Base64 String,       |   (Returns the          |                    |
+    | Folder, Document Name        |   Base64 String)        |                    |
+    | as Input)                    |                         |                    |
+    |              |                  |                         |                    |
+    └──────────────┼──────────────────┼─────────────────────────┼────────────────────┘
+                   |                  |                         |
+                   └──────────────────┼─────────────────────────┘
+                                      |
+                                (Calls the API,
+                                 Passes the Base64)
 ```
+
+### Description:
+
+- **Process:** Initiates the flow with input parameters including the Base64 string, folder, and document name.
+  
+- **Integration Call:** Executes an integration call to initiate the Web API.
+  
+- **Web API:** Retrieves the Base64 string from an external source.
+  
+- **Integration Object:** Converts the retrieved Base64 string into an Appian Document.
+  
+- **Process:** Concludes the flow after processing the Base64 string into an Appian Document.
+
+### Explanation:
+
+- This diagram provides a step-by-step visual representation of the process flow for converting a Base64 string into an Appian Document.
+- Each component is clearly labeled with directional arrows indicating the flow of data and actions.
+- The format is designed to be clear and concise, suitable for displaying in Markdown on GitHub for easy understanding of the process flow.
+
 
 ---
 
