@@ -1,4 +1,7 @@
-# Interface: VU_displayDynamicFieldsInColumnLayout
+# Display Dynamic Fields In Column Layout
+
+## Interface: 
+VU_displayDynamicFieldsInColumnLayout
 
 ## Rule Inputs:
 1. `fieldComponents` (Any Type)
