@@ -1,26 +1,31 @@
-#1 Check Is Null Or Empty
+```markdown
+# Appian Expression Rules
 
-Rule Inputs:
-1. value (Any Type)
+## #1 Check Is Null Or Empty
 
-Code:
+### Rule Inputs:
+1. `value` (Any Type)
+
+### Code:
+```apex
 or(
   a!isNullOrEmpty(ri!value),
   trim(ri!value) = "",
   length(ri!value) = 0
 )
+```
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-#2 Sort the given array based on Data Type
+## #2 Sort the given array based on Data Type
 
-Rule Inputs:
-1. array (Any Type)
-2. dataType (Text)
-3. isDesc (Boolean)
+### Rule Inputs:
+1. `array` (Any Type)
+2. `dataType` (Text)
+3. `isDesc` (Boolean)
 
-
-Code:
+### Code:
+```apex
 index(
   index(
     todatasubset(
@@ -40,7 +45,7 @@ index(
       ),
       pagingConfiguration: a!pagingInfo(
         1,
-        - 1,
+        -1,
         a!sortInfo(
           field: "value",
           ascending: ri!isDesc <> true
@@ -53,15 +58,17 @@ index(
   "value",
   null
 )
+```
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-#3 Check whether is Appian Document ID exists:
+## #3 Check whether Appian Document ID exists
 
-Rule Inputs:
-1. documentId (Number (Integer))
+### Rule Inputs:
+1. `documentId` (Number (Integer))
 
-Code:
+### Code:
+```apex
 and(
   a!isNotNullOrEmpty(ri!documentId),
   find(
@@ -73,16 +80,19 @@ and(
     )
   ) > 0
 )
+```
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
-#4 Get the Site URL
+## #4 Get the Site URL
 
-Rule Inputs:
-1. siteParam (Text)
+### Rule Inputs:
+1. `siteParam` (Text)
 
-Code:
+### Code:
+```apex
 concat(
   regexfirstmatch("^.+?/suite/", a!urlfortask(0)),
   ri!siteParam
 )
+```
