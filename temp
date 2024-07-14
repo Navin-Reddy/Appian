@@ -1,0 +1,9 @@
+```sail
+a!localVariables(
+  local!myText: "Hello, World!",
+  a!richTextDisplayField(
+    value: a!richTextItem(
+      text: ri!myText
+    )
+  )
+)
