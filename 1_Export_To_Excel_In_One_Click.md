@@ -1,5 +1,5 @@
 
-# Appian Web API and Integration Setup
+# Export to Excel in Single Click
 
 ## #1 Create a Web API (VU Generate Excel) for Generating the Excel Sheet using a!exportDataStoreEntityToExcel()
 
