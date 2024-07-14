@@ -1,15 +1,14 @@
-#1 Create an Interface:
+# Interface: VU_displayDynamicFieldsInColumnLayout
 
-Name: VU_displayDynamicFieldsInColumnLayout
+## Rule Inputs:
+1. `fieldComponents` (Any Type)
+2. `noOfColumns` (Number (Integer))
 
-Rule Inputs:
-1. fieldComponents (Any Type)
-2. noOfColumns (Number (Integer))
-
-Usage Consideration:
+## Usage Consideration:
 Currently, this method won't support any picker fields.
 
-Code:
+## Code:
+```apex
 if(
   or(
     a!isNullOrEmpty(ri!fieldComponents),
@@ -35,3 +34,4 @@ if(
     )
   )
 )
+```
