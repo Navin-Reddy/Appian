@@ -100,7 +100,7 @@ if(
 reduce(
   rule!VU_appendAndReturnListForFibbo(list: _, result: _),
   {},
-  a!enumerate(10)
+  enumerate(10)
 )
 ```
 
