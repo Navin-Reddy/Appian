@@ -37,7 +37,7 @@ Rule Inputs:
 2. sqlQuery (Text)
 
 Code:
-```apex 
+```javascript 
 /*Max timeout: The maximum timeout for a stored procedure is 600 seconds.*/
 /*Max rows per result set: The maximum number of rows per result set is 1000. */
 /*Result sets that exceed this threshold will be truncated.*/
