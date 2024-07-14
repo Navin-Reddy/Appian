@@ -1,4 +1,6 @@
-# #1 Iterative Approach with Button Save:
+# Fibonacci Sequence
+
+## #1 Iterative Approach with Button Save:
 
 ```apex
 a!localVariables(
@@ -37,7 +39,7 @@ a!localVariables(
 
 ---
 
-# #2 Using Binet's Formula:
+## #2 Using Binet's Formula:
 
 ```apex
 a!localVariables(
@@ -67,9 +69,9 @@ a!localVariables(
   - The formula `(phi^item - psi^item) / sqrt(5)` calculates each term, rounded to the nearest integer using the `round()` function.
 
 ---
-# #3 Iterative Approach with Reduce
+## #3 Iterative Approach with Reduce
 
-## VU_appendAndReturnListForFibbo
+### VU_appendAndReturnListForFibbo
 
 #### Rule Input:
 
@@ -92,7 +94,7 @@ if(
 )
 ```
 
-## VU_fibbonacciSequence
+### VU_fibbonacciSequence
 
 ```apex
 reduce(
