@@ -106,6 +106,8 @@ a!localVariables(
 )
 ```
 
+---
+
 ## #2 Create a Connected System (VU Local API)
 
 ### Base URL: 
