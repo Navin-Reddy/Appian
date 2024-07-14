@@ -1,4 +1,3 @@
-```markdown
 # Appian Expression Rules
 
 ## #1 Check Is Null Or Empty
@@ -13,9 +12,7 @@ or(
   trim(ri!value) = "",
   length(ri!value) = 0
 )
-```
 
----
 
 ## #2 Sort the given array based on Data Type
 
