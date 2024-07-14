@@ -1,4 +1,4 @@
-# Appian Expression Rules
+# Common Expression Rules
 
 ## #1 Check Is Null Or Empty
 
