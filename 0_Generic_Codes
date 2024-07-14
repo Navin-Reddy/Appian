@@ -4,7 +4,7 @@ Rule Inputs:
 1. value (Any Type)
 
 Code:
-```plaintext
+```javascript
 or(
   a!isNullOrEmpty(ri!value),
   trim(ri!value) = "",
