@@ -112,7 +112,7 @@ a!toJson({ ppId: ri!ppId })
 |--------------|------------------|----------|---------------|-----------|----------|--------|
 | newDocId     | Document         | No       |               | No        | No       | No     |
 | Error        | IntegrationError | No       |               | No        | No       | No     |
-| body         | Text             | No       | Yes           | No        | No       | No     |
+| body         | Text             | No       |               | Yes       | No       | No     |
 | isBase64ToDoc| Boolean          | No       | False         | Yes       | No       | No     |
 
 **Process Flow:**
