@@ -111,8 +111,8 @@ a!toJson({ ppId: ri!ppId })
 
 **Process Flow:**
 
-Start Node ─────────────────────► Is Base64 to Document ──(If `pv!isBase64ToDoc` is TRUE)──► Call Base64 to Doc ───► End Node
-                               └──(If none of the above are TRUE)──► End Node
+**Start Node** ──► **Is Base64 to Document?** ──(If `pv!isBase64ToDoc` is TRUE)──► **Call Base64 to Doc** ──► **End Node**
+                 └──(If none of the above are TRUE)──► **End Node**
 
 **Node 1: Start Node**
 - **Node Type:** Start Node
