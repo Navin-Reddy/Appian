@@ -1,6 +1,7 @@
-### Execute SQL Query
 
-#1 Execute the Create Stored Procedure Script:
+# Execute SQL Query
+
+## #1 Execute the Create Stored Procedure Script:
 
 ```sql
 DELIMITER $$
@@ -21,23 +22,24 @@ DELIMITER ;
 
 ---
 
-#2 Create an Appian Constant to hold the Stored Procedure Name:
+## #2 Create an Appian Constant to hold the Stored Procedure Name:
 	
-Constant
-VU_SP_SQL_EXEC
+### Constant
+- `VU_SP_SQL_EXEC`
 
-Value: sp_sqlexec
+### Value: 
+- `sp_sqlexec`
 
 ---
 
-3# Create an Expression rule for Execute SQL Query:
+## #3 Create an Expression Rule for Execute SQL Query:
 
-Rule Inputs:
-1. datasource (Text)
-2. sqlQuery (Text)
+### Rule Inputs:
+1. `datasource` (Text)
+2. `sqlQuery` (Text)
 
-Code:
-```javascript 
+### Code:
+```javascript
 /*Max timeout: The maximum timeout for a stored procedure is 600 seconds.*/
 /*Max rows per result set: The maximum number of rows per result set is 1000. */
 /*Result sets that exceed this threshold will be truncated.*/
