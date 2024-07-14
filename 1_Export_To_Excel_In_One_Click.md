@@ -1,5 +1,4 @@
 
-```markdown
 # Appian Web API and Integration Setup
 
 ## #1 Create a Web API (VU Generate Excel) for Generating the Excel Sheet using a!exportDataStoreEntityToExcel()
@@ -106,8 +105,6 @@ a!localVariables(
   )
 )
 ```
-
----
 
 ## #2 Create a Connected System (VU Local API)
 
