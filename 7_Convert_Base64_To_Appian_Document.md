@@ -3,13 +3,13 @@
 ## Visual Flow:
 
 ```
-Process ──► Integration Call ──► Web API ──► Integration Object ──► Process
-    |              |                  |                         |                    |
-    | (Passed Process ID,             |   (Returns the          |                    |
-    | Folder, Document Name           |   Base64 String)        |                    |
-    | as Input)                       |                         |                    |
-    |              |                  |                         |                    |
-    └──────────────┼──────────────────┼─────────────────────────┼────────────────────┘
+Process ───►  Integration Call ───► Web API ───►  Integration Object ───►  Process
+    |              |                  |                         |               |
+    | (Passed Process ID,             |   (Returns the          |               |
+    | Folder, Document Name           |   Base64 String)        |               |
+    | as Input)                       |                         |               |
+    |              |                  |                         |               |
+    └──────────────┼──────────────────┼─────────────────────────┼───────────────┘
                    |                  |                         |
                    └──────────────────┼─────────────────────────┘
                                       |
