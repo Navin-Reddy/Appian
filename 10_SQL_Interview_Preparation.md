@@ -168,6 +168,17 @@
   FROM Employees;
   ```
 
+### Using LEAD() and LAG()
+- **Description**: LEAD() retrieves data from the next row, while LAG() retrieves data from the previous row.
+- **Example**: 
+  ```sql
+  SELECT EmployeeName, 
+         Salary, 
+         LEAD(Salary) OVER (ORDER BY Salary) AS NextSalary,
+         LAG(Salary) OVER (ORDER BY Salary) AS PreviousSalary
+  FROM Employees;
+  ```
+
 ### Implementing Self-Joins
 - **Example**: 
   ```sql
