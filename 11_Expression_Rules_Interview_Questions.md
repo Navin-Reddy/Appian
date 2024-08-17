@@ -15,6 +15,7 @@
    F-U
 
    **Code:**
+   ```apex
    a!localVariables(
      local!arr1: { "A", "B", "C", "D", "E", "F" },
      local!arr2: { "P", "Q", "R", "S", "T", "U" },
@@ -23,6 +24,7 @@
        index(fv!item, 1, null) & "-" & index(fv!item, 2, null)
      )
    )
+   ```
 
 2. Write an expression rule to print the below output with the two input arrays.
 
@@ -34,6 +36,7 @@
    A5, A4, A3, A2, A1, B1, B2, B3, B4, B5, C5, C4, C3, C2, C1, D1, D2, D3, D4, D5, E5, E4, E3, E2, E1
 
    **Code:**
+   ```apex
    a!localVariables(
      local!arr1: { 1, 2, 3, 4, 5 },
      local!arr2: { "A", "B", "C", "D", "E" },
@@ -53,10 +56,12 @@
        )
      )
    )
+   ```
 
 3. Write an expression rule to print all the prime numbers between a given range.
 
    **Code:**
+   ```apex
    a!localVariables(
      local!start: 1,
      local!end: 10,
@@ -71,6 +76,7 @@
        )
      )
    )
+   ```
 
    **Output:**
    {1, 2, 3, 5, 7}
@@ -87,11 +93,13 @@
    )
 
    **Output:**
+   ```apex
     *  *  *  *  * 
     *  *  *  *  * 
     *  *  *  *  * 
     *  *  *  *  * 
     *  *  *  *  * 
+	```
 
 5. Write an expression rule to print the below pattern for any given input N.
 
@@ -105,15 +113,18 @@
    )
 
    **Output:**
+   ``apex
     *  *  *  *  * 
     *  *  *  * 
     *  *  *   
     *  *  
     * 
+	```
 
 6. Write an expression rule to print the below pattern for any given input N.
 
    **Code:**
+   ```apex
    a!localVariables(
      local!n: 5,
      a!forEach(
@@ -121,6 +132,7 @@
        joinarray(repeat(fv!index, " * "), "")
      )
    )
+   ```
 
    **Output:**
     * 
@@ -132,12 +144,14 @@
 7. How to find the power of a number (x to the power of y) without using any Appian function like power()?
 
    **Code:**
+   ```apex
    a!localVariables(
      local!power: 5,
      local!base: 2,
      local!result: repeat(local!base, local!power),
      product(local!result)
    )
+   ```
 
    **Output:**
    25
@@ -148,6 +162,7 @@
    - Condition 3: If the number is divisible by both 3 and 5, then print "Divisible by 3 & 5".
 
    **Code:**
+   ```apex
    a!localVariables(
      local!n: 15,
      a!forEach(
@@ -167,6 +182,8 @@
        )
      )
    )
+   ```
+
 
    **Output:**
    {1, 2, "Divisible by 3", 4, "Divisible by 5", "Divisible by 3", 7, 8, "Divisible by 3", "Divisible by 5", 11, "Divisible by 3", 13, 14, "Divisible by 3 & 5"}
