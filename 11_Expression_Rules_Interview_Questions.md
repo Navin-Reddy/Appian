@@ -118,8 +118,8 @@
     *  *  *  * 
     *  *  *   
     *  *  
-    * 
-	```
+    *
+   ```
 
 6. Write an expression rule to print the below pattern for any given input N.
 
@@ -135,13 +135,15 @@
    ```
 
    **Output:**
+   ```apex
     * 
     *  *  
     *  *  *  
     *  *  *  *  
-    *  *  *  *  * 
+    *  *  *  *  *
+   ```
 
-7. How to find the power of a number (x to the power of y) without using any Appian function like power()?
+8. How to find the power of a number (x to the power of y) without using any Appian function like power()?
 
    **Code:**
    ```apex
@@ -156,7 +158,7 @@
    **Output:**
    25
 
-8. Write an expression rule to print all the numbers between a given range but with different conditions:
+9. Write an expression rule to print all the numbers between a given range but with different conditions:
    - Condition 1: If the number is divisible by 3, then print "Divisible by 3" instead of that number.
    - Condition 2: If the number is divisible by 5, then print "Divisible by 5" instead of that number.
    - Condition 3: If the number is divisible by both 3 and 5, then print "Divisible by 3 & 5".
