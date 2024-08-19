@@ -68,3 +68,26 @@ a!localVariables(
   { item: "y", count: 1 }
 }
 ```
+
+---
+
+## #3 Reverse the text without reverse function:
+
+### Code:
+
+```apex
+a!localVariables(
+  local!text: "Navin Reddy",
+  local!list: char(code(local!text)),
+  joinarray(
+    a!forEach(
+      local!list,
+      local!list[length(local!list) - fv!index + 1]
+    ),
+    ""
+  )
+)
+```
+
+### Output:
+yddeR nivaN
