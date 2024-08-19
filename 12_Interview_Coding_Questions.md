@@ -55,6 +55,7 @@ a!localVariables(
 ```
 
 ### Output:
+```apex
 {
   { item: "n", count: 2 },
   { item: "a", count: 1 },
@@ -66,4 +67,4 @@ a!localVariables(
   { item: "d", count: 2 },
   { item: "y", count: 1 }
 }
-
+```
