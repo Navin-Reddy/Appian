@@ -29,6 +29,12 @@ if(
 )
 ```
 
+### Input:
+list: {9, 7, 5, 4, 8, 1, 3, 1}
+
+### Output:
+{1, 1, 3, 4, 5, 7, 8, 9}
+
 ---
 
 ## #2 Return count of letters in the given text
@@ -36,7 +42,7 @@ if(
 ### Code:
 ```apex
 a!localVariables(
-  local!text: "Navin Reddy",
+  local!text: "navin Reddy",
   local!list: char(code(local!text)),
   a!forEach(
     union(local!list, local!list),
@@ -47,3 +53,17 @@ a!localVariables(
   )
 )
 ```
+
+### Output:
+{
+  { item: "n", count: 2 },
+  { item: "a", count: 1 },
+  { item: "v", count: 1 },
+  { item: "i", count: 1 },
+  { item: " ", count: 1 },
+  { item: "R", count: 1 },
+  { item: "e", count: 1 },
+  { item: "d", count: 2 },
+  { item: "y", count: 1 }
+}
+
