@@ -67,15 +67,17 @@ index(
 ### Code:
 ```apex
 and(
-  a!isNotNullOrEmpty(ri!documentId),
-  find(
-    "Document",
-    extract(
-      getcontentobjectdetailsbyid(id: ri!documentId),
-      "Type:",
-      "]"
-    )
-  ) > 0
+  a!isNotNullOrEmpty(ri!docId),
+  a!localVariables(
+    local!contentDetails: getcontentobjectdetailsbyid(id: ri!docId),
+    {
+      find(
+        "Document",
+        extract(local!contentDetails, "Type:", "]")
+      ) > 0,
+      extract(local!contentDetails, "State: ", ",") = "Active Published"
+    }
+  )
 )
 ```
 
