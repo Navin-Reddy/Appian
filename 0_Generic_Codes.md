@@ -95,3 +95,23 @@ concat(
   ri!siteParam
 )
 ```
+
+---
+
+## #5 Generate Document Name
+
+### Rule Inputs:
+1. `text` (Text)
+
+### Code:
+```apex
+regexreplaceall(
+  "[\\/:*?""<>|%$&\'()\[\]{}#@!+=~`^,;]",
+  ri!text & if(
+    rule!NBF_COMMON_checkIsNullOrEmpty(ri!text),
+    "",
+    " "
+  ) & text(now(), "yymmddhhmmss"),
+  "_"
+)
+```
