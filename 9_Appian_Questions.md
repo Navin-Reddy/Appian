@@ -104,7 +104,7 @@ Any Appian installation is referred to as an environment.
 - **Content**: Stores metadata and security settings for documents and their organizational structures (communities, knowledge centers, and folders). The actual document content is stored on the file system. Also referred to as collaboration, collab, CO.
 - **Personalization**: Stores information about users, groups, group membership, and group types. Also referred to as groups, PE.
 
-## 28. Why can users be deleted or moved to another environment in Appian?
+## 28. Why can users not be deleted or moved to another environment in Appian?
 The license cost is based on the number of users per environment, and Appian maintains metadata based on users. Hence, users cannot be moved or deleted.
 
 ## 29. What is the output for the expression `milli(time(11,03,04,05)+1)`?
