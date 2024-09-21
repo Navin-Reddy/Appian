@@ -149,7 +149,7 @@ No.
 The drilldown path provides additional info about a particular column of the report.
 
 ## 41. How many pages can be added in a site?
-5
+10 (Add a page group to create a nested menu of pages under a page group title)
 
 ## 42. What is the purpose of user start page?
 When configured, this allows the user to directly log in to the given site rather than the Tempo page.
