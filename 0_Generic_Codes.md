@@ -134,7 +134,6 @@ index(
     ),
     "value"
   ),
-  null,
   "name",
   null
 )
