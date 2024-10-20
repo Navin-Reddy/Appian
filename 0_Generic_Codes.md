@@ -115,3 +115,27 @@ regexreplaceall(
   "_"
 )
 ```
+
+---
+
+## #5 Get Document Name (Published & Unpublished)
+
+### Rule Inputs:
+1. `documentId` (Number (Integer))
+
+### Code:
+```apex
+index(
+  index(
+    index(
+      a!fileUploadField(value: ri!documentId),
+      "contents",
+      null
+    ),
+    "value",
+    null,
+    "name",
+    null
+  )
+)
+```
