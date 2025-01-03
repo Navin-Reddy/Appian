@@ -108,7 +108,7 @@ concat(
 regexreplaceall(
   "[\\/:*?""<>|%$&\'()\[\]{}#@!+=~`^,;]",
   ri!text & if(
-    rule!NBF_COMMON_checkIsNullOrEmpty(ri!text),
+    a!isNullOrEmpty(ri!text),
     "",
     " "
   ) & text(now(), "yymmddhhmmss"),
