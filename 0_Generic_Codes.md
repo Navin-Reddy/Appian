@@ -118,7 +118,7 @@ regexreplaceall(
 
 ---
 
-## #6 Get Document Name (Published & Unpublished)
+## #6 Get Document Name (Unpublished)
 
 ### Rule Inputs:
 1. `documentId` (Number (Integer))
